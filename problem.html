@@ -7,6 +7,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Momo+Signature&display=swap');
+    </style>
     <link rel="stylesheet" href="styles/problem.css">
 </head>
 <body>
@@ -14,8 +17,11 @@
         <div>
             <h3 class="nav-btn"><a href="index.html">SlopCode</a></h3>
         </div>
+        <div class="nav-buttons">
+            <button><h3>Run</h3></button>
+            <button><h3>Submit</h3></button>
+        </div>
         <div class="nav-options">
-            <h3 class="nav-btn"><a>About</a></h3>
             <h3 class="nav-btn"><a>Problems</a></h3>
             <h3 class="nav-btn"><a>Leaderboard</a></h3>
         </div>
@@ -23,10 +29,43 @@
 
     <section class="layout">
         <section class="left-panel">
-            <h1>left</h1>
+            <div class="heading">
+                <p>Description</p>
+            </div>
+            <div class="left-panel-content">
+<h1>FizzBuzz</h1>
+            <p>
+Given an integer n, return a string array answer (1-indexed) where:<br>
+<br>
+    - answer[i] == "FizzBuzz" if i is divisible by 3 and 5.<br>
+    - answer[i] == "Fizz" if i is divisible by 3.<br>
+    - answer[i] == "Buzz" if i is divisible by 5.<br>
+    - answer[i] == i (as a string) if none of the above conditions are true.<br>
+<br>
+<br>
+Example 1:<br>
+<br>
+Input: n = 3<br>
+Output: ["1","2","Fizz"]<br>
+<br>
+Example 2:<br>
+<br>
+Input: n = 5
+Output: ["1","2","Fizz","4","Buzz"]<br>
+<br>
+Example 3:<br>
+<br>
+Input: n = 15<br>
+Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]<br>
+
+            </p>
+            </div>
         </section>
         <section class="right-panel">
-            <h1>right</h2>
+            <div class="heading">
+                <p>Code</p>
+            </div>
+            <textarea></textarea>
         </section>
     </section>
 </body>
