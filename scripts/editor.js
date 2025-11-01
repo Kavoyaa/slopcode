@@ -23,3 +23,34 @@ function toggle_output_window() {
 }
 
 output_btn.addEventListener("click", toggle_output_window);
+
+
+// Logic for "Run" button
+const run_btn = document.getElementById("run-btn");
+
+async function run_code() {
+    var code = document.getElementById("code-editor").value;
+
+    const request = new Request("https://emkc.org/api/v2/piston/execute", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            language: "javascript",
+            version: "18.15.0",
+            files: [{
+                name: "main.js",
+                content: code
+            }]
+        })
+    });
+
+    const result = await fetch(request);
+    const res = await result.json();
+    output_content.innerText = res.run.output;
+
+    if (output_state === "hidden") {
+        toggle_output_window();
+    }
+}
+
+run_btn.addEventListener("click", run_code);

@@ -150,4 +150,6 @@ textarea {
 
 .output-content {
     height: 22vh;
+    overflow: auto;
+    padding: 8px;
 }
