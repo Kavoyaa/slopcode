@@ -11,6 +11,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Momo+Signature&display=swap');
     </style>
     <link rel="stylesheet" href="styles/problem.css">
+    <script src="scripts/editor.js" defer></script>
 </head>
 <body>
     <nav>
@@ -67,11 +68,11 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
             </div>
             <textarea spellcheck="false"></textarea>
             <div class="output-container">
-                <div class="heading output-heading">
+                <div class="heading output-heading" id="output-heading" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
                     <p>Output</p>
-                    <button class="show-hide-btn" id="show-hide-btn"><p>[HIDE]</p></button>
+                    <button class="show-hide-btn" id="show-hide-btn"><p>[SHOW]</p></button>
                 </div>
-                <div class="output-content">
+                <div class="output-content" id="output-content" style="display: none;">
                     <!-- will be genrated by js -->
                 </div>
             </div>
