@@ -7,18 +7,20 @@
 
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #1c1e2a;
     color: #bfc8e9;
-    margin: 0;
+    margin-top: 8px;
     /* max-width: 75rem; */
     padding-right: 12px;
     padding-left: 12px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 95vh;
 }
 
 nav {
@@ -42,8 +44,8 @@ nav {
     justify-content: space-between;
     gap: 14px;
     flex-grow: 1;
-    margin-bottom: 11px;
-    margin-top: 2px;
+    /* margin-bottom: 11px; */
+    margin-top: 3px;
 }
 
 .left-panel {
@@ -67,6 +69,7 @@ nav {
     display: flex;
     flex-direction: column;
     flex: 1;
+    position: relative;
 }
 
 .heading {
@@ -93,19 +96,58 @@ textarea {
     font-size: 20px;
     padding-left: 8px;
     padding-right: 8px;
+
 }
 
-button {
+.top-button {
     text-decoration: none;
     color: #c490e5;
     background-color: #c291e042;
     border: 1px solid #c28fe1;
     border-radius: 10px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
     cursor: pointer;
 }
 
-button {
+.bottom-btn {
+    text-decoration: none;
+    color: #c490e5;
+    background-color: #c291e042;
+    border: 1px solid #c28fe1;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
 
+.output-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    background-color: #2b2f3f;
+    border-radius: 10px;
+    /* width: 58vw; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.output-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.output-heading button {
+    background-color: inherit;
+    border: none;
+    color: #c395e0;
+    cursor: pointer;
+}
+
+.output-content {
+    height: 22vh;
 }

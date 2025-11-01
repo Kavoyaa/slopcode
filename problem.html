@@ -18,8 +18,8 @@
             <h3 class="nav-btn"><a href="index.html">SlopCode</a></h3>
         </div>
         <div class="nav-buttons">
-            <button><h3>Run</h3></button>
-            <button><h3>Submit</h3></button>
+            <button class="top-button"><h3>Run</h3></button>
+            <button class="top-button"><h3>Submit</h3></button>
         </div>
         <div class="nav-options">
             <h3 class="nav-btn"><a>Problems</a></h3>
@@ -65,7 +65,16 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
             <div class="heading">
                 <p>Code</p>
             </div>
-            <textarea></textarea>
+            <textarea spellcheck="false"></textarea>
+            <div class="output-container">
+                <div class="heading output-heading">
+                    <p>Output</p>
+                    <button class="show-hide-btn" id="show-hide-btn"><p>[HIDE]</p></button>
+                </div>
+                <div class="output-content">
+                    <!-- will be genrated by js -->
+                </div>
+            </div>
         </section>
     </section>
 </body>
