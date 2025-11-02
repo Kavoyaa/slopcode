@@ -170,6 +170,10 @@ textarea {
     padding: 8px;
 }
 
+.stdin {
+    width: 200px;
+}
+
 .dropdown {
     display: flex;
     position: relative;
@@ -212,7 +216,7 @@ textarea {
     left: 50%;
     transform: translateX(-50%);
     /* transform: translateY(-50%); */
-    display: flex;
+    display: none;
 }
 
 .popup-close-btn {

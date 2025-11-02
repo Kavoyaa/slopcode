@@ -48,7 +48,8 @@ const run_btn = document.getElementById("run-btn");
 
 async function run_code() {
     var code = document.getElementById("code-editor").value;
-
+    var input = document.getElementById("stdin").value;
+    
     const request = new Request("https://emkc.org/api/v2/piston/execute", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
@@ -58,7 +59,8 @@ async function run_code() {
             files: [{
                 name: "main.js",
                 content: code
-            }]
+            }],
+            stdin: input
         })
     });
 
