@@ -1,0 +1,1 @@
+seperate repo for api: https://github.com/Kavoyaa/slopcode-api
