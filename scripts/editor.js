@@ -24,6 +24,24 @@ function toggle_output_window() {
 
 output_btn.addEventListener("click", toggle_output_window);
 
+// Logic for popup when you try to change language
+const lang_popup_btns = document.querySelectorAll(".popup-btn");
+const popup = document.getElementById("popup");
+// const dropdown_content = document.getElementById("dropdown-content");
+
+lang_popup_btns.forEach(element => {
+    console.log("hi");
+    element.addEventListener("click", () => {
+        popup.style.display = "flex";
+
+    });
+});
+
+const popup_close_btn = document.getElementById("popup-close-btn");
+popup_close_btn.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
 
 // Logic for "Run" button
 const run_btn = document.getElementById("run-btn");

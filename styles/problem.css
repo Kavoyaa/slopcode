@@ -96,7 +96,23 @@ textarea {
     font-size: 20px;
     padding-left: 8px;
     padding-right: 8px;
+}
 
+.code-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor-options {
+    display: flex;
+    gap: 10px;
+}
+
+.editor-dropdown-btn {
+    background-color: #5d637a;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
 }
 
 .top-button {
@@ -152,4 +168,56 @@ textarea {
     height: 22vh;
     overflow: auto;
     padding: 8px;
+}
+
+.dropdown {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align:right;
+    background-color: #2b2f3f;
+    padding: 8px;
+    border-radius: 10px;
+    bottom: -90px;
+    right: 0;
+}
+
+.dropdown-content button {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.popup-btn {
+    min-width: 120px;
+    text-align: left;
+}
+
+.popup {
+    background-color: #2d3041;
+    border: 1px solid #c28fe1;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    z-index: 5;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translateY(-50%); */
+    display: flex;
+}
+
+.popup-close-btn {
+    background-color: inherit;
+    border: none;
+    color: #c395e0;
+    cursor: pointer;
 }

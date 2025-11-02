@@ -10,10 +10,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Momo+Signature&display=swap');
     </style>
+    <script src="https://kit.fontawesome.com/021741cec3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/problem.css">
-    <script src="scripts/editor.js" defer></script>
 </head>
 <body>
+    <div id="popup" class="popup">
+        <div>
+            <button id="popup-close-btn" class="popup-close-btn">[CLOSE]</button>
+            <h1>Not so fast, slopper!</h1>
+            <h2>Yer gotta pay up to use tis feature.</h2>
+            <h3>Scan this QR code for instructions on how to do so.</h3>
+            <h4>Please, im broke.</h4>
+            <p>i really need this money</p>
+            <h5>thanks</h5>
+            <h6>i love you, mwah <3 xoxo</h6>
+        </div>
+        <img src="qrcode.png" height="300px">
+    </div>
     <nav>
         <div>
             <h3 class="nav-btn"><a href="index.html">SlopCode</a></h3>
@@ -63,8 +76,30 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
             </div>
         </section>
         <section class="right-panel">
-            <div class="heading">
+            <div class="heading code-heading">
                 <p>Code</p>
+                <div class="editor-options">
+                    <div class="dropdown">
+                        <p>Language: </p>
+                        <p class="editor-dropdown-btn">Javascript <i class="fa-solid fa-caret-down"></i></p>
+                        <div class="dropdown-content">
+                            <button class="popup-btn">Python</button>
+                            <button class="popup-btn">C++</button>
+                            <button class="popup-btn">Go</button>
+                            <button class="popup-btn">C#</button>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <p>Font: </p>
+                        <p class="editor-dropdown-btn">Momo Signature <i class="fa-solid fa-caret-down"></i></p>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <button class="popup-btn">JetBrains Mono</button>
+                            <button class="popup-btn">Fira Code</button>
+                            <button class="popup-btn">Cascadia Code</button>
+                            <button class="popup-btn">Consolas</button>
+                        </div>
+                    </div>   
+                </div>
             </div>
             <textarea spellcheck="false" id="code-editor"></textarea>
             <div class="output-container">
@@ -78,5 +113,7 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
             </div>
         </section>
     </section>
+    <script src="scripts/editor.js" defer></script>
+
 </body>
 </html>
