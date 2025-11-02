@@ -225,3 +225,24 @@ textarea {
     color: #c395e0;
     cursor: pointer;
 }
+
+.result-popup {
+    background-color: #2d3041;
+    border: 1px solid #c28fe1;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    z-index: 5;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translateY(-50%); */
+    display: none;
+}
+
+.result-popup-close-btn {
+    background-color: inherit;
+    border: none;
+    color: #c395e0;
+    cursor: pointer;
+}

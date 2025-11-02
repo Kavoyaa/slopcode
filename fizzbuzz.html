@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/021741cec3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/problem.css">
     <script src="scripts/editor.js" defer></script>
-    <script src="scripts/problem.js" defer></script>
+    <script src="scripts/fizzbuzz.js" defer></script>
 </head>
 <body>
     <div id="popup" class="popup">
@@ -29,6 +29,15 @@
         </div>
         <img src="qrcode.png" height="300px">
     </div>
+
+    <div id="result-popup" class="result-popup">
+        <div>
+            <button id="result-popup-close-btn" class="result-popup-close-btn">[CLOSE]</button>
+            <h1>Slop result</h1>
+
+        </div>
+        <img src="qrcode.png" height="300px">
+    </div>
     <nav>
         <div>
             <h3 class="nav-btn"><a href="index.html">SlopCode</a></h3>
@@ -38,8 +47,8 @@
             <button class="top-button" id="submit-btn"><h3>Submit</h3></button>
         </div>
         <div class="nav-options">
-            <h3 class="nav-btn"><a>Problems</a></h3>
-            <h3 class="nav-btn"><a>Leaderboard</a></h3>
+            <h3 class="nav-btn"><a href="index.html">Problems</a></h3>
+        
         </div>
     </nav>
 
